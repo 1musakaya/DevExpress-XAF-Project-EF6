@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DashboardView Id="EtysReceiptListFilter">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="InvoiceListViewItem" ViewItem="InvoiceListViewItem" />
+          <LayoutItem Id="InvoiceDetailViewItem" ViewItem="InvoiceDetailViewItem" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+  </Views>
+</Application>

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="InvoiceListDC" Caption="Invoice List" ViewId="InvoiceListDasboardView" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options CollectionsEditMode="Edit" />
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="21.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="21.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="System.Drawing.Color" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxColorPickerPropertyEditor" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <DetailView Id="Address_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" IsNewNode="True">
+            <LayoutGroup Id="Address" Index="0" ShowCaption="False" IsNewNode="True">
+              <LayoutItem Id="FullAddress" ViewItem="FullAddress" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="PhoneNumber" ViewItem="PhoneNumber" ShowCaption="" Index="1" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="Country" ViewItem="Country" ShowCaption="" Index="2" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="City" ViewItem="City" ShowCaption="" Index="3" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="StateProvince" ViewItem="StateProvince" IsNewNode="True" />
+              <LayoutItem Id="Street" ViewItem="Street" IsNewNode="True" />
+              <LayoutItem Id="ZipPostal" ViewItem="ZipPostal" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="City_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" IsNewNode="True">
+            <LayoutGroup Id="City" Index="0" ShowCaption="False" IsNewNode="True">
+              <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="Country" ViewItem="Country" ShowCaption="" Index="1" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Company_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" IsNewNode="True">
+            <LayoutGroup Id="Company" Index="0" ShowCaption="False" IsNewNode="True">
+              <LayoutItem Id="Type" ViewItem="Type" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="AddressDetail_Group" Index="1" Direction="Horizontal" ShowCaption="True" IsNewNode="True">
+            <LayoutItem Id="AddressDetail" ViewItem="AddressDetail" ShowCaption="" Index="0" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Country_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" IsNewNode="True">
+            <LayoutGroup Id="Country" Index="0" ShowCaption="False" IsNewNode="True">
+              <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IncomeExpense_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" IsNewNode="True">
+            <LayoutGroup Id="IncomeExpense" Index="0" ShowCaption="False" IsNewNode="True">
+              <LayoutItem Id="Type" ViewItem="Type" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="InvoiceItem" ViewItem="InvoiceItem" ShowCaption="" Index="1" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="Quantity" ViewItem="Quantity" ShowCaption="" Index="2" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="Amount" ViewItem="Amount" ShowCaption="" Index="3" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Invoice_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" RelativeSize="50" IsNewNode="True">
+            <LayoutGroup Id="Invoice" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+              <LayoutItem Id="Type" ViewItem="Type" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" MinSize="50, 25" RelativeSize="24.761904761904763" IsNewNode="True" />
+              <LayoutItem Id="InvoiceDate" ViewItem="InvoiceDate" ShowCaption="" Index="1" MaxSize="300, 0" SizeConstraintsType="Custom" MinSize="50, 25" RelativeSize="24.761904761904763" IsNewNode="True" />
+              <LayoutItem Id="Company" ViewItem="Company" ShowCaption="" Index="2" MaxSize="300, 0" SizeConstraintsType="Custom" MinSize="50, 25" RelativeSize="24.761904761904763" IsNewNode="True" />
+              <LayoutItem Id="DipTutar" ViewItem="DipTutar" Index="3" RelativeSize="5.7142857142857144" MaxSize="200, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="CheckType" ViewItem="CheckType" ShowCaption="" Index="4" MaxSize="300, 0" SizeConstraintsType="Custom" MinSize="50, 25" RelativeSize="20" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Details_Group" Index="1" Direction="Vertical" ShowCaption="True" RelativeSize="50" IsNewNode="True">
+            <LayoutItem Id="Details" ViewItem="Details" ShowCaption="" Index="0" RelativeSize="100" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="InvoiceDetails_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" IsNewNode="True">
+            <LayoutGroup Id="InvoiceDetails" Index="0" Direction="Horizontal" ShowCaption="True" Caption="Invoice Details" IsNewNode="True">
+              <LayoutGroup Id="InvoiceDetails_col1" Index="0" ShowCaption="False" IsNewNode="True">
+                <LayoutItem Id="IncomeExpenseTypes" ViewItem="IncomeExpenseTypes" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+                <LayoutItem Id="Quantity" ViewItem="Quantity" ShowCaption="" Index="1" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+                <LayoutItem Id="Price" ViewItem="Price" ShowCaption="" Index="2" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="InvoiceDetails_col2" Index="1" ShowCaption="False" IsNewNode="True">
+                <LayoutItem Id="Items" ViewItem="Items" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+                <LayoutItem Id="Total" ViewItem="Total" ShowCaption="" Index="1" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="InvoiceItem_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" IsNewNode="True">
+            <LayoutGroup Id="InvoiceItem" Index="0" ShowCaption="False" IsNewNode="True">
+              <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="InvoiceType" ViewItem="InvoiceType" ShowCaption="" Index="1" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="Type" ViewItem="Type" ShowCaption="" Index="2" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DashboardView Id="InvoiceListDasboardView" Caption="Invoice List Dasboard" IsNewNode="True">
+      <Items IsNewNode="True">
+        <DashboardViewItem Id="FilterItem" ViewId="InvoiceListDC_DetailView" IsNewNode="True" />
+        <DashboardViewItem Id="ListItem" ViewId="Invoice_ListView" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" IsNewNode="True">
+          <LayoutItem Id="FilterItem" ViewItem="FilterItem" Index="0" IsNewNode="True" />
+          <LayoutItem Id="ListItem" ViewItem="ListItem" Index="1" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DetailView Id="InvoiceListDC_DetailView">
+      <Items>
+        <ActionContainerViewItem Id="InvoiceListActionCategory" Caption="InvoiceListActionCategory" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="InvoiceListDC">
+              <LayoutItem Id="InvoiceListActionCategory" ViewItem="InvoiceListActionCategory" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="InvoiceListDetailDC_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" IsNewNode="True">
+            <LayoutGroup Id="InvoiceListDetailDC" Index="0" ShowCaption="False" IsNewNode="True">
+              <LayoutItem Id="Date" ViewItem="Date" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="Type" ViewItem="Type" ShowCaption="" Index="1" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="Company" ViewItem="Company" ShowCaption="" Index="2" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+              <LayoutItem Id="Item" ViewItem="Item" ShowCaption="" Index="3" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Lading_DetailView" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" RelativeSize="16.751269035532996" IsNewNode="True">
+            <LayoutGroup Id="Lading" Index="0" Direction="Horizontal" ShowCaption="True" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Lading_col1" Index="0" ShowCaption="False" RelativeSize="45.3551912568306" Caption="Lading_col1" IsNewNode="True">
+                <LayoutItem Id="Company" ViewItem="Company" ShowCaption="" Index="0" MaxSize="300, 0" SizeConstraintsType="Custom" MinSize="50, 25" RelativeSize="26.881720430107528" IsNewNode="True" />
+                <LayoutGroup Id="Autoc6e31c2c-9ccc-4cb4-8f57-cca4108b6f77" ShowCaption="False" Caption="Autoc6e31c2c-9ccc-4cb4-8f57-cca4108b6f77(6)" Direction="Horizontal" Index="1" RelativeSize="73.118279569892479" IsNewNode="True">
+                  <LayoutGroup Id="Auto5f3a2c2f-6d72-463b-80c5-504e6be3f424" ShowCaption="False" Caption="Auto5f3a2c2f-6d72-463b-80c5-504e6be3f424(7)" Index="0" RelativeSize="15.060240963855422" IsNewNode="True">
+                    <LayoutGroup Id="Autod79724fa-b177-40a7-9c67-06999a8100c6" ShowCaption="False" Caption="Autod79724fa-b177-40a7-9c67-06999a8100c6(8)" Direction="Vertical" Index="0" RelativeSize="52.941176470588232" IsNewNode="True">
+                      <LayoutItem Id="ExitAddress" ViewItem="ExitAddress" SizeConstraintsType="Custom" MinSize="300, 0" MaxSize="300, 0" Index="0" RelativeSize="100" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutItem Id="ArrivalAddress" ViewItem="ArrivalAddress" SizeConstraintsType="Custom" MinSize="300, 0" MaxSize="300, 0" Index="1" RelativeSize="47.058823529411768" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autoe82bc312-40a6-4d7f-8c5d-153b31aafa94" ShowCaption="False" Caption="Autoe82bc312-40a6-4d7f-8c5d-153b31aafa94(12)" Index="1" RelativeSize="84.939759036144579" IsNewNode="True">
+                    <LayoutGroup Id="Auto24f22651-2987-4dce-853e-e4f2cdc7829e" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="44.117647058823529" IsNewNode="True">
+                      <LayoutItem Id="ExitCountry" ViewItem="ExitCountry" Index="0" RelativeSize="50" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+                      <LayoutItem Id="ExitCity" ViewItem="ExitCity" Index="1" RelativeSize="50" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto0038d2de-f9ba-4684-8788-1d93c25f13ca" ShowCaption="False" Caption="Auto0038d2de-f9ba-4684-8788-1d93c25f13ca(14)" Direction="Horizontal" Index="1" RelativeSize="55.882352941176471" IsNewNode="True">
+                      <LayoutItem Id="ArrivalCountry" ViewItem="ArrivalCountry" Index="0" RelativeSize="50" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+                      <LayoutItem Id="ArrivalCity" ViewItem="ArrivalCity" Index="1" RelativeSize="50" MaxSize="300, 0" SizeConstraintsType="Custom" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Auto1721ebbc-54c3-4dd8-9818-f35e8af2fbaf" ShowCaption="False" Caption="Auto1721ebbc-54c3-4dd8-9818-f35e8af2fbaf(8)" Index="1" RelativeSize="19.262295081967213" IsNewNode="True" />
+              <LayoutGroup Id="Autoceceea1b-9dd4-4452-aa67-ef09e156244b" ShowCaption="False" Caption="Autoceceea1b-9dd4-4452-aa67-ef09e156244b(11)" Index="2" RelativeSize="19.125683060109289" IsNewNode="True" />
+              <LayoutGroup Id="Lading_col2" Index="3" ShowCaption="False" Caption="Lading_col2" RelativeSize="16.256830601092897" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Details_Group" Index="1" Direction="Vertical" ShowCaption="True" RelativeSize="83.248730964467" Caption="Details" IsNewNode="True">
+            <LayoutItem Id="Details" ViewItem="Details" ShowCaption="" Index="0" RelativeSize="86.035313001605132" IsNewNode="True" />
+            <LayoutItem Id="TotalIncome" ViewItem="TotalIncome" SizeConstraintsType="Custom" MinSize="50, 25" MaxSize="300, 0" Index="1" RelativeSize="6.5810593900481544" IsNewNode="True" />
+            <LayoutItem Id="TotalExpense" ViewItem="TotalExpense" SizeConstraintsType="Custom" MinSize="50, 25" MaxSize="300, 0" Index="2" RelativeSize="7.38362760834671" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Lading_ListView">
+      <Columns>
+        <ColumnInfo Id="TotalIncome">
+          <Summary>
+            <ColumnSummaryItem Id="@834a2373-1b85-482a-8e49-6014e1f5e5a7" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+        <ColumnInfo Id="TotalExpense">
+          <Summary>
+            <ColumnSummaryItem Id="@070a84e4-eb4c-4564-a444-2c0c28131c9e" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

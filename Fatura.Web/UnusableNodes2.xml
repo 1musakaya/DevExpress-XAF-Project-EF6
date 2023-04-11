@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DashboardView Id="EtysListFilter_Copy" Removed="True" />
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Reports">
+        <Items Id="Items">
+          <Item Id="Etsy_Receipt_List" ViewId="EtysReceiptListFilter" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

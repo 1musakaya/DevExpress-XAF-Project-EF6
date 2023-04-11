@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DashboardView Id="EtysReceiptListFilter">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="InvoiceListViewItem" ViewItem="InvoiceListViewItem" />
+          <LayoutItem Id="InvoiceDetailViewItem" ViewItem="InvoiceDetailViewItem" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Reports">
+        <Items Id="Items">
+          <Item Id="Etsy_Receipt_List" ViewId="EtysReceiptListFilter" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>
