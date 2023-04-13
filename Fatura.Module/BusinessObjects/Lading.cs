@@ -16,7 +16,7 @@ using System.Text;
 namespace Fatura.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [DefaultProperty("FullAddress")]
+    [DefaultProperty("Id")]
     
     public class Lading : IXafEntityObject, IObjectSpaceLink, INotifyPropertyChanged
     {

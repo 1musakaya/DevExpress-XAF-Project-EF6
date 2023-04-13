@@ -4,7 +4,17 @@
     <Items>
       <Item Id="Default">
         <Items>
+          <Item Id="Group_ListView" Removed="True" />
           <Item Id="InvoiceListDC" Caption="Invoice List" ViewId="InvoiceListDasboardView" IsNewNode="True" />
+          <Item Id="Lesson_ListView" Removed="True" />
+          <Item Id="Student_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Student" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Group_ListView" ViewId="Group_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Lesson_ListView" ViewId="Lesson_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Student_ListView" ViewId="Student_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
     </Items>

@@ -1,6 +1,6 @@
 ﻿namespace Fatura.Module.Web.Controllers
 {
-    partial class InvoiceDetailDetailViewController
+    partial class GroupViewController
     {
         /// <summary>
         /// Required designer variable.

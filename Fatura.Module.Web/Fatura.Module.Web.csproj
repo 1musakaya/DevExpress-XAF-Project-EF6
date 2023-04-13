@@ -238,11 +238,11 @@
     <Compile Include="Controllers\CompanyViewController.Designer.cs">
       <DependentUpon>CompanyViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\InvoiceDetailDetailViewController.cs">
+    <Compile Include="Controllers\GroupViewController.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controllers\InvoiceDetailDetailViewController.Designer.cs">
-      <DependentUpon>InvoiceDetailDetailViewController.cs</DependentUpon>
+    <Compile Include="Controllers\GroupViewController.Designer.cs">
+      <DependentUpon>GroupViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\InvoiceDetailsViewController.cs">
       <SubType>Component</SubType>
@@ -322,6 +322,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="UnusableNodes2.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes3.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>

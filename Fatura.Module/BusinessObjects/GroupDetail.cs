@@ -14,29 +14,23 @@ using System.Text;
 
 namespace Fatura.Module.BusinessObjects
 {
-    [DefaultClassOptions]
-    public class IncomeExpense : IXafEntityObject, IObjectSpaceLink, INotifyPropertyChanged
+    public class GroupDetail : IXafEntityObject, IObjectSpaceLink, INotifyPropertyChanged
     {
-        public IncomeExpense()
+        public GroupDetail()
         {
+            //Students = new List<Student>();
         }
-        [Browsable(false)]  // Hide the entity identifier from UI.
-        public int Id { get; protected set; }
-        [ImmediatePostData]
-        public virtual IncomeExpenseTypes Type { get; set; }
+        //[Browsable(false)]  // Hide the entity identifier from UI.
+        //public int Id { get; protected set; }
+        //[Aggregated]
+        //public virtual IList<Student> Students { get; set; }
 
-        [DataSourceCriteria("(Type = ##Enum#Fatura.Module.BusinessObjects.ActivePasiveTypes,Active#) and (InvoiceType = '@Type')")]
-        public virtual  InvoiceItem InvoiceItem { get; set; }
-        public double Quantity { get; set; }
-        public double Amount { get; set; }
+        ////public virtual Student Student { get; set; }
 
-
-        [Browsable(false)]
-        public int LadingId { get; set; }
-
-        [Browsable(false)]
-        public virtual Lading Lading { get; set; }
-
+        ////public virtual Lesson Lesson { get; set; }
+        //[Browsable(false)]
+        //public int? GroupId;
+        //public virtual Group Group { get; set; }
 
         #region IXafEntityObject members (see https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppIXafEntityObjecttopic.aspx)
         void IXafEntityObject.OnCreated()

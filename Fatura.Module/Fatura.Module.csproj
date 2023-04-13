@@ -177,6 +177,9 @@
     <Compile Include="BusinessObjects\Address.cs" />
     <Compile Include="BusinessObjects\City.cs" />
     <Compile Include="BusinessObjects\Company.cs" />
+    <Compile Include="BusinessObjects\Group.cs" />
+    <Compile Include="BusinessObjects\GroupDetail.cs" />
+    <Compile Include="BusinessObjects\GroupName.cs" />
     <Compile Include="BusinessObjects\IncomeExpense.cs" />
     <Compile Include="BusinessObjects\InvoiceListDC.cs" />
     <Compile Include="BusinessObjects\InvoiceListDetailDC.cs" />
@@ -187,7 +190,11 @@
     <Compile Include="BusinessObjects\InvoiceDetails.cs" />
     <Compile Include="BusinessObjects\InvoiceItem.cs" />
     <Compile Include="BusinessObjects\IncomeExpenseTypes.cs" />
+    <Compile Include="BusinessObjects\StudentLesson.cs" />
+    <Compile Include="BusinessObjects\Lesson.cs" />
     <Compile Include="BusinessObjects\Parameter.cs" />
+    <Compile Include="BusinessObjects\Student.cs" />
+    <Compile Include="BusinessObjects\StudentName.cs" />
     <Compile Include="BusinessObjects\TypeExtensions.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Migrations\Configuration.cs" />

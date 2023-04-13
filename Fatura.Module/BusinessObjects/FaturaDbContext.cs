@@ -67,5 +67,9 @@ namespace Fatura.Module.BusinessObjects
         public DbSet<IncomeExpense> IncomeExpenses { get;set; }
 
         public DbSet<Parameter> Parameters { get; set; }
+        public DbSet<Group> Groups { get; set; }
+        public DbSet<StudentLesson> Lessons { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Lesson>LessonNames { get; set; }
     }
 }

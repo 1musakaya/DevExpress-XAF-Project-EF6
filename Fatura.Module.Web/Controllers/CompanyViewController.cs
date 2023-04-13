@@ -1,4 +1,4 @@
-﻿using DevExpress.Charts.Native;
+﻿ using DevExpress.Charts.Native;
 using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
@@ -45,6 +45,7 @@ namespace Fatura.Module.Web.Controllers
 
         private void Ft_Deleting(object sender, DeletingEventArgs e)
         {
+            
             var obj = ((DetailView)View).CurrentObject as Company;
             var inv = ObjectSpace.GetObjects<Invoice>(CriteriaOperator.Parse("Company=?", obj));
             if (inv.Count > 0)
@@ -59,15 +60,16 @@ namespace Fatura.Module.Web.Controllers
                 e.Cancel = true;
                 throw new UserFriendlyException("Company bir faturada veya yükte kullanıldığı için silinemez.");
             }
-            else 
-            {
-                ObjectSpace.Delete(obj);
-            }
+            //else 
+            //{
+            //    ObjectSpace.Delete(obj);
+                
+            //}
             //if (inv.Count < 0 && lad.Count < 0)
             //{
             //    ObjectSpace.Delete(obj);
             //}
-
+            
         }
 
         private void ObjectSpace_Committing(object sender, System.ComponentModel.CancelEventArgs e)
